@@ -2,17 +2,25 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Paket Paintball & Rafting Batu Malang - Petualangan Seru & Profesional</title>
     <meta name="description" content="Dapatkan pengalaman petualangan tak terlupakan dengan paket Paintball dan Rafting terbaik di Batu, Malang. Layanan profesional, tim ahli, dan fasilitas lengkap.">
-    <meta name="keywords" content="paintball batu malang, rafting batu malang, paket paintball rafting, wisata batu malang, outbound batu malang">
+    <meta name="keywords" content="paintball batu malang, rafting batu malang, paket paintball rafting, wisata batu malang, outbound batu malang, harga rafting batu, tempat paintball malang">
     <meta name="author" content="Ahmad">
     
     <!-- Open Graph / SEO -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://paket-paintballrafting-batumalang.netlify.app/">
     <meta property="og:title" content="Paket Paintball & Rafting Batu Malang - Petualangan Seru">
     <meta property="og:description" content="Nikmati keseruan bermain paintball dan rafting di alam terbuka Batu, Malang. Booking sekarang!">
-    <meta property="og:image" content="img/hero.webp">
+    <meta property="og:image" content="https://paket-paintballrafting-batumalang.netlify.app/img/paintball.webp">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://paket-paintballrafting-batumalang.netlify.app/">
+    <meta property="twitter:title" content="Paket Paintball & Rafting Batu Malang - Petualangan Seru">
+    <meta property="twitter:description" content="Nikmati keseruan bermain paintball dan rafting di alam terbuka Batu, Malang. Booking sekarang!">
+    <meta property="twitter:image" content="https://paket-paintballrafting-batumalang.netlify.app/img/paintball.webp">
 
     <!-- Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -20,14 +28,39 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 
+    <!-- Schema.org for AI Overview -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Adventure Batu Malang",
+      "image": "https://paket-paintballrafting-batumalang.netlify.app/img/paintball.webp",
+      "@id": "https://paket-paintballrafting-batumalang.netlify.app/",
+      "url": "https://paket-paintballrafting-batumalang.netlify.app/",
+      "telephone": "+6282211221909",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Batu, Malang",
+        "addressLocality": "Batu",
+        "addressRegion": "Jawa Timur",
+        "postalCode": "65311",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -7.8682,
+        "longitude": 112.5186
+      }
+    }
+    </script>
+
     <style>
-        /* Specific layout for index to ensure no drift/glitch */
         .hero-section {
-            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1596751303335-ca42b3ca29c1?auto=format&fit=crop&q=80&w=1920');
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('img/paintball.webp');
         }
     </style>
 </head>
-<body>
+<body oncontextmenu="return false;">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
@@ -74,7 +107,7 @@
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="card card-article">
-                        <img src="https://images.unsplash.com/photo-1541625602330-2277a1cd43a7?auto=format&fit=crop&q=80&w=800" class="card-img-top" alt="Paintball Batu">
+                        <img src="img/peralatan-paintball.webp" class="card-img-top" alt="Paintball Batu" width="800" height="500" loading="lazy">
                         <div class="card-body p-4 text-center">
                             <h3>Paintball War Game</h3>
                             <p>Simulasi pertempuran yang melatih strategi, komunikasi, dan keberanian tim Anda di hutan pinus yang asri.</p>
@@ -83,7 +116,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card card-article">
-                        <img src="https://images.unsplash.com/photo-1530866495547-15bcdc537078?auto=format&fit=crop&q=80&w=800" class="card-img-top" alt="Rafting Batu">
+                        <img src="img/rafting.webp" class="card-img-top" alt="Rafting Batu" width="800" height="500" loading="lazy">
                         <div class="card-body p-4 text-center">
                             <h3>White Water Rafting</h3>
                             <p>Taklukkan derasnya arus sungai dengan pemandangan tebing yang eksotis. Keamanan terjamin dengan pemandu ahli.</p>
@@ -117,18 +150,18 @@
             </ul>
             <p class="text-muted small">&copy; 2026 Paket Paintball Rafting Batu Malang. All rights reserved. Author: Ahmad</p>
             <div class="social-icons pt-3">
-                <a href="#" class="text-dark mx-2"><i class="fab fa-facebook fa-lg"></i></a>
-                <a href="#" class="text-dark mx-2"><i class="fab fa-instagram fa-lg"></i></a>
-                <a href="https://wa.me/6282211221909" class="text-dark mx-2"><i class="fab fa-whatsapp fa-lg"></i></a>
+                <a href="#" class="text-dark mx-2" aria-label="Facebook"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="text-dark mx-2" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                <a href="https://wa.me/6282211221909" class="text-dark mx-2" aria-label="WhatsApp"><i class="fab fa-whatsapp fa-lg"></i></a>
             </div>
         </div>
     </footer>
 
     <!-- Floating Buttons -->
-    <a href="https://wa.me/6282211221909" class="floating-wa" target="_blank">
+    <a href="https://wa.me/6282211221909" class="floating-wa" target="_blank" aria-label="Chat WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <button class="floating-top" id="backToTop">
+    <button class="floating-top" id="backToTop" aria-label="Scroll to Top">
         <i class="fas fa-chevron-up"></i>
     </button>
 
